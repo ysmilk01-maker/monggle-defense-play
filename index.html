@@ -168,9 +168,9 @@
       var buildUrl = 'Build';
       var config = {
         arguments: [],
-        dataUrl: buildUrl + '/21fa468c3eb0bbd08b8cc02e65dd3a72.data.unityweb',
+        dataUrl: buildUrl + '/3e6c7948135306d033ef74470269961e.data.unityweb',
         frameworkUrl: buildUrl + '/2afd2df377e68d60b43ddc2bda0c7d0b.framework.js.unityweb',
-        codeUrl: buildUrl + '/27f90f32bf78f9afe568a1b815cb4f21.wasm.unityweb',
+        codeUrl: buildUrl + '/c30f906fe517399aaea75d3df1b34ad4.wasm.unityweb',
         streamingAssetsUrl: 'StreamingAssets',
         companyName: "ninetosixlab",
         productName: "몽글몽글 디펜스",
@@ -180,7 +180,7 @@
       // 아이폰 3배 화면은 2배로 그려 가볍게
       config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 3);   // 47차 — 2 로 막으면 아이폰(3배)에서 흐릿하다
       var script = document.createElement('script');
-      script.src = buildUrl + '/67e220755e3af8728a509a64ca54a903.loader.js';
+      script.src = buildUrl + '/bb611012e2f2e217c9804b556e6a929c.loader.js';
       script.onload = function () {
         createUnityInstance(canvas, config, function (p) { progress(p * 0.97); }).then(function (unityInstance) {
           window.unityInstance = unityInstance;
