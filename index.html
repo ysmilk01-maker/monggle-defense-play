@@ -82,7 +82,7 @@
     <div id="warn"></div>
   </div>
   <script>
-    var TIPS = ["Lv4 마법진 둘을 옆에 두고 누르면 합체할 수 있어요", "Lv3 이 되면 진화 갈림길에서 두 길 중 하나를 골라요", "옆에 붙은 마법진끼리 서로 돕기도, 깎기도 해요. 상성표를 확인해 보세요", "대포 버섯은 마법진에 포자를 쏴요. 먼저 잡으세요", "땅굴 두더지는 길 중간에서 솟아나요. 길 뒤쪽에도 마법진을 설치하세요", "부서진 마법진은 눌러서 별사탕으로 바로 고칠 수 있어요", "필살기 단추가 가득 차면 루미의 별빛 대폭발!", "다음 웨이브 예고를 보고 미리 대비하세요"], STEPS = ["마법책을 펴는 중…", "마법진을 준비하는 중…", "몬스터들이 다가오는 중…", "마법 탑에 불을 켜는 중…", "준비 완료!"], MONS = ["e-jelly", "e-mush", "e-slime", "e-boar", "e-turtle"];
+    var TIPS = ["Lv4 마법진 둘을 옆에 두고 누르면 합체할 수 있어요", "Lv3 이 되면 진화 갈림길에서 두 길 중 하나를 골라요", "옆에 붙은 마법진끼리 서로 돕기도, 깎기도 해요. 상성표를 확인해 보세요", "대포 버섯은 마법진에 포자를 쏴요. 먼저 잡으세요", "땅굴 두더지는 길 중간에서 솟아나요. 길 뒤쪽에도 마법진을 설치하세요", "부서진 마법진은 눌러서 별사탕으로 바로 고칠 수 있어요", "필살기는 처음부터 가득! 한 판에 한 번, 몬스터가 몰려올 때 눌러요", "다음 웨이브 예고를 보고 미리 대비하세요"], STEPS = ["마법책을 펴는 중…", "마법진을 준비하는 중…", "몬스터들이 다가오는 중…", "마법 탑에 불을 켜는 중…", "준비 완료!"], MONS = ["e-jelly", "e-mush", "e-slime", "e-boar", "e-turtle"];
     var loading = document.querySelector('#loading');
     // 별 — 위치는 고정된 씨앗으로(새로 고침해도 같은 하늘)
     (function () {
@@ -168,9 +168,9 @@
       var buildUrl = 'Build';
       var config = {
         arguments: [],
-        dataUrl: buildUrl + '/663b6b1b8f57387f311ac951239db47b.data.unityweb',
+        dataUrl: buildUrl + '/4784c90918fec59dfcd2d04cde7a311c.data.unityweb',
         frameworkUrl: buildUrl + '/8bbf36b1e308f514cceeea3e9fc2d793.framework.js.unityweb',
-        codeUrl: buildUrl + '/f241b7d67af8c4dde1b33c4a7fe77492.wasm.unityweb',
+        codeUrl: buildUrl + '/91fd8210398fc38c30fe248bc2dcc7dc.wasm.unityweb',
         streamingAssetsUrl: 'StreamingAssets',
         companyName: "ninetosixlab",
         productName: "몽글몽글 디펜스",
@@ -180,7 +180,7 @@
       // 아이폰 3배 화면은 2배로 그려 가볍게
       config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 3);   // 47차 — 2 로 막으면 아이폰(3배)에서 흐릿하다
       var script = document.createElement('script');
-      script.src = buildUrl + '/46e8bfc9121298067e20110a616c1a84.loader.js';
+      script.src = buildUrl + '/0d57b617302d9e359b603f8d84b2a20c.loader.js';
       script.onload = function () {
         createUnityInstance(canvas, config, function (p) { progress(p * 0.97); }).then(function (unityInstance) {
           window.unityInstance = unityInstance;
