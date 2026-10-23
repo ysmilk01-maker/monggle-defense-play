@@ -171,9 +171,9 @@
       var buildUrl = 'Build';
       var config = {
         arguments: [],
-        dataUrl: buildUrl + '/64b36d9317b257d647861699d07825e9.data.unityweb',
+        dataUrl: buildUrl + '/4dfa5aa98b484578c4ef535e8220ac9c.data.unityweb',
         frameworkUrl: buildUrl + '/c84e8c20d2eac06d67821c33e2233886.framework.js.unityweb',
-        codeUrl: buildUrl + '/5fc0b06e685297f9f0a41f52c48521ba.wasm.unityweb',
+        codeUrl: buildUrl + '/cba9d2638165411624a6fdc15f83a8a8.wasm.unityweb',
         streamingAssetsUrl: 'StreamingAssets',
         companyName: "ninetosixlab",
         productName: "몽글몽글 디펜스",
@@ -193,7 +193,7 @@
       var dprQ = /[?&]dpr=([\d.]+)/.exec(location.search), dprCap = dprQ ? parseFloat(dprQ[1]) : NaN;
       config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, dprCap > 0 ? dprCap : 3);
       var script = document.createElement('script');
-      script.src = buildUrl + '/1ec5d9789efda0d7f48ee9e4ebaf91d6.loader.js';
+      script.src = buildUrl + '/1f930c04cbd20f16e260a34267417ab5.loader.js';
       script.onload = function () {
         createUnityInstance(canvas, config, function (p) { progress(p * 0.97); }).then(function (unityInstance) {
           window.unityInstance = unityInstance;
