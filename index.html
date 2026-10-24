@@ -171,13 +171,13 @@
       var buildUrl = 'Build';
       var config = {
         arguments: [],
-        dataUrl: buildUrl + '/ab07f0b7394d67ed25bacfe5ab583863.data.unityweb',
-        frameworkUrl: buildUrl + '/1e546ec2c236370c47c9373a0f6ce119.framework.js.unityweb',
-        codeUrl: buildUrl + '/1c46cb0849f3a82655a10a48d81a9cc6.wasm.unityweb',
+        dataUrl: buildUrl + '/b584609744337eda58b70cf03f106365.data.unityweb',
+        frameworkUrl: buildUrl + '/52518f0d2974725326ea26cf10922603.framework.js.unityweb',
+        codeUrl: buildUrl + '/b712a21646fbb55588c0d860769878a0.wasm.unityweb',
         streamingAssetsUrl: 'StreamingAssets',
         companyName: "ninetosixlab",
-        productName: "몽글몽글 디펜스",
-        productVersion: "0.1",
+        productName: "루미의 마법 디펜스",
+        productVersion: "1.0.0",
         showBanner: unityShowBanner,
         // 51차 — 로드 뒤 실행 중 오류. 로더는 window 의 error · unhandledrejection 을 모두 이리로 넘긴다(토스 브리지 등 다른 스크립트 오류 포함).
         // 그래서 늘 true 를 돌려 유니티 기본 영어 경고창만 막고, wasm 중단 · 메모리 부족 같은 치명 오류 낱말이 있을 때만 「다시 시도」를 띄운다.
@@ -193,7 +193,7 @@
       var dprQ = /[?&]dpr=([\d.]+)/.exec(location.search), dprCap = dprQ ? parseFloat(dprQ[1]) : NaN;
       config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, dprCap > 0 ? dprCap : 3);
       var script = document.createElement('script');
-      script.src = buildUrl + '/13b179caaea2393175695cf3e24a5b29.loader.js';
+      script.src = buildUrl + '/1bfe0b34149e7656388bb6dd146b4d76.loader.js';
       script.onload = function () {
         createUnityInstance(canvas, config, function (p) { progress(p * 0.97); }).then(function (unityInstance) {
           window.unityInstance = unityInstance;
